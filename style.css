@@ -1,0 +1,36 @@
+
+.grid-coll{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.main-div{
+    display:grid;
+    grid-template-columns:80% auto;
+}
+.popup{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left: 50%; 
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s ,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.img-popup{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    margin-left:80px;
+
+
+}
